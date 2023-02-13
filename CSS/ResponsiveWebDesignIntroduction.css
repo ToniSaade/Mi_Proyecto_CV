@@ -1,0 +1,80 @@
+/**
+    El responsive Web Design es aquello que hace que nuestra página sea vea bien en todos los
+    dispositivos. ya sea en una pantalla de escritorio, una tablet, celular, etc. Solo usa HTML
+    y CSS.
+    De esta forma, usamos ambos para reacondicionar, esconder, alargar o mover el contenido para que
+    se vea bien en cualquier pantalla.
+
+    ¿QUÉ ES EL VIEWPORT?
+
+    Es el área de una página web visible por el usuario. Este varía con el dispositivo, y va a ser más
+    pequeño en un dispositivo móvil que en una pantalla de computadora. Para incluir el viewport, se 
+    colocar la siguiente etiqueta "meta" en todas las páginas que hagamos:
+
+    <meta name:"viewport" content:"width: devide-width, initial-scale: 1.0">
+
+    La parte width:device-width define la anchura que debe tomar la página para adecuarse al ancho del
+    dispositivo.
+    La parte initial-scale:1.0 define el zoom inicial que tendrá la página cuando es cargada por
+    primera vez en el navegador.
+
+    EL TAMAÑO DEL CONTENIDO PARA EL VIEWPORT
+
+    No debemos hacer que el usuario tenga que trasladarse horizontalmente en nuestra página. Esto
+    resultaría en una pobre user experience.
+
+    Otras reglas a seguir::
+
+    1) No usar elementos con una anchura muy larga
+    2) No dejar que el contenido dependa de un determinado viewport para que se renderice bien
+    3) Usar las distinas media queries de CSS para aplicar diferentes estilos para pequeñas y grandes
+    pantallas.
+
+    GRID-VIEW (Vista de grilla)
+
+    Esto es que la pantalla se divida en columnas, para que sea más fácil colocar elementos en una
+    página. Por lo general, una responsive grid-view consta de 12 columnas, y tiene una anchura total
+    del 100%, y se achica o agranda dependiendo de como ajustemos el tamaño de la ventana del 
+    navegador.
+
+    CONSTRUYENDO UNA RESPONSIVE GRID-VIEW
+
+    Primero debemos asegurarnos que todos los elementos html tengan la propiedad box-sizing colocada a 
+    border-box. Esto se asegura de que el padding y el border estén incluídos en el ancho y alto total
+    de los elementos.
+
+    * {
+       box-sizing: border-box;
+    }
+
+    Ejemplo:
+*/
+
+.menu {
+    width: 25%;
+    float: left;
+  }
+  .main {
+    width: 75%;
+    float: left;
+  }
+
+/**
+    Este ejemplo tiene solo dos columnas. Pero queremos usar una responsive grid-view con 12
+    columnas, para tener más control sobre la página.
+    Primero calculamos el porcentaje para una columna: 100%/12 = 8,33%.
+    Entonces hacemos una clase para cada una de las 12 columnas, class="col-" y un número definiendo 
+    cuantas columnas la sección debería usar.
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}

@@ -1,0 +1,65 @@
+/** El selector * sirve para dar propiedades a todos los elementos html que se encuentren en nuestro
+documento.
+*/
+
+* {
+    font-size: 15px;
+    color: blue;
+    margin: 5px;
+}
+
+p {
+    color: burlywood;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/** 
+    Pero vemos que si debajo tenemos un elemento (en este caso <p>) definido aparte, entonces ese 
+    elemento no toma los valores del *, sino que toma los que le asignamos a ese elemento de forma
+    aparte.
+*/
+
+/**
+    Varios elementos html pueden compartir las mismas propiedades si colocamos, por ejemplo:
+    p, h1, h2 {
+        color: blue
+    } 
+*/
+
+/**
+    A continuación, utilizaremos el atributo ID para identificar por separado a un elemento en cuestión
+    que querramos modificar sinn afectar a las propiedades de los demás elementos de ese mismo tipo
+*/
+
+#Parrafo1 {
+    color: fuchsia;
+    font-size: 58px;
+}
+
+/**
+    Ahora utilizaremos las llamadas CLASES, siendo estas utilizadas para cuando, por ejemplo, 
+    necesitemos que varios elementos tengan las mismas propiedades, dándonos la posibilidad de reutilizar
+    este código.
+*/
+
+.MiClase {
+    color: red;
+    border: 5px solid indigo;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/**
+   Si queremos customizar más a fondo la tipografía de nuestro texto, podremos, aparte de utilizar
+   las que vienen por defecto en el navegador, usar la página Google Fonts para observar y añadir
+   la fuente que queramos, de la siguiente manera:
+
+   1) Copiar y pegar en la sección Head de nuestro documento HTML el código de la fuente de la
+   tipografía deseada.
+   2) En CSS, definimos el elemento que querramos que tenga esa fuente y se lo aplicamos.
+   */
+   
+   #Párrafo2 {
+    color: indianred;
+    font-family: 'Roboto', sans-serif;
+   }

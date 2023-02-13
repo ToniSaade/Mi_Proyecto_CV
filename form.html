@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedidos</title>
+</head>
+<body>
+    <div style="background-color: darkgray;">
+        <h1><strong>Bienvenidxs al servicio de patadas :D</strong></h1>
+        <p>Por favor, complete el siguiente formulario para poder brindarle el servicio:</p>
+
+        <form name="Patadas a domicilio" action="mis_bolas.php" method="post">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su Nombre"> <br><br>
+            <label for="Apellido">Apellido:</label>
+            <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su Apellido"> <br><br>
+            <label for="E-mail">E-mail:</label>
+            <input type="email" id="E-mail" name="E-mail" placeholder="Ingrese su E-mail"> <br><br>
+            <label for="Dirección">Dirección:</label>
+            <input type="text" id="Dirección" name="Dirección" placeholder="Ingrese su ubicación"> <br><br>
+            <label for="TipoPatada">Seleccione el tipo de patada que desea recibir:</label> <br><br>
+            <label for="Patada1">Patada en los huevos</label>
+            <input type="checkbox" id="Patada1" name="Patada1"><br>
+            <label for="Patada2">Patada en la cara</label>
+            <input type="checkbox" id="Patada2" name="Patada2"> <br>
+            <label for="Patada3">Patada en las costillas</label>
+            <input type="checkbox" id="Patada3" name="Patada3"> <br><br>
+            <input type="submit" value="Sumbitear"> <br><br>
+        </form>
+
+        <p>Hacé click en <span style="color: red;">Sumbitear</span> para enviar tus datos, el servicio se te brindará en los próximos 3 días hábiles.</p>
+    </div>
+</body>
+</html>

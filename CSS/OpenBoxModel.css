@@ -1,0 +1,52 @@
+/** 
+    Aprendimos que todos los elementos HTML pueden ser considerados como cajas. La caja es esencialmente
+    algo que encuadra a todo elemento html. Consiste en: márgenes, bordes, padding y el contenido en sí.
+    
+    Content: donde aparece el texto y las imágenes.
+    Padding: Despeja un área alrededor del contenido. Este es transparente.
+    Border: Un borde que va alrededor del padding y el content.
+    Margin: Despeja un área afuera del borde. El margen es transparente.
+    
+    A continuación un ejemplo con un título (elemento h1)
+*/
+h1 {
+    font-size: 70px;
+    font-family: serif;
+    border: solid blue;
+    padding: 5px;
+    margin: 10px;
+}
+
+/** 
+    También podemos modificar por separado las partes de arriba, abajo, izquierda y derecha de las 
+    propiedades de la box, como se muestra a continuación:: 
+*/
+
+p {
+    border-top: 5px;
+    border-bottom: 10px;
+    border-left: 20px;
+    border-right: 15 px;
+}
+
+/** 
+    También podemos solo poner los valores px que queramos sin necesidad de poner los comandos
+    top, bottom, left y right al lado de la propiedad que vamos a modificar. Solo colocamos los valores
+    px teniendo en cuenta el sentido de las agujas del reloj de la siguiente manera: top, right, bottom
+    y left.
+*/
+
+h3 {
+    padding: 20px 5px 20px 600px;
+}
+
+/** 
+    Veamos ahora un ejemplo con el elemento semántico <section>
+*/
+
+section {
+    width: 300px;
+    border: 15px solid magenta;
+    padding: 50px;
+    margin: 20px 20px 20px 1000px;    
+}
