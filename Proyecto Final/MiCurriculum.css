@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+#TítuloPágina{
+    font-family: 'Mynerve', cursive;
+    color: white;
+    background-color: chocolate;
+    font-size: 75px;
+    max-width: 100%;
+    min-width: auto;
+    border: solid black 5px;
+}
+
+.Aside{
+    float: left;
+    max-width: 20%;
+}
+
+.Detalles{
+    float: left;
+    padding: 0 20px;
+    max-width: 50%;
+}
+
+.Data_Requirement {
+    font-family: 'Phudu', cursive;
+}
+
+.Info {
+    font-family: 'Raleway', sans-serif;
+}
+
+.Information {
+    font-family: 'Raleway', sans-serif;
+}
+
+#IMAGEN {
+    width: 180px;
+    height: 140px;
+    max-width: 100%;
+    min-width: auto;
+}
+
+.Aside2 {
+    float: right;
+    max-width: 25%;
+    background-color: black;
+    color: white;
+}
+
+#Botón_Mostrar4 {
+    background-color: black;
+    color: blue;
+    font-size: 10px;
+}
+
+#Botón_Ocultar4 {
+    background-color: black;
+    color: blue;
+    font-size: 10px;
+}

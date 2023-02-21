@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Sumar y Calculadora Multiplicar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/JS/funciones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header class="container-fluid text-center">
+        <h1 id="header1">Calculadora de Sumas y Multiplicaciones</h1>
+    </header>
+
+    <section class="container-fluid">
+        <p>A continuación, la calculadora de sumas:</p>
+        <br>
+        <h2>¿Que es una suma?</h2>
+        <br>
+        <p id="DefSuma">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet maximus mi. Donec efficitur at magna non porttitor. Maecenas pretium sollicitudin justo, ultricies luctus purus. Cras odio lectus, bibendum in fringilla sit amet, tempus eu nibh. Donec risus nulla, convallis at dolor id, dictum pharetra lacus. Curabitur suscipit rhoncus odio. Maecenas laoreet tellus massa, convallis dignissim enim auctor sed. Pellentesque ornare venenatis erat vitae efficitur. Curabitur vehicula odio nulla, quis tincidunt lectus vestibulum nec.
+
+            Suspendisse massa tellus, bibendum in auctor eu, facilisis non elit. Aliquam bibendum in purus id dapibus. Ut luctus metus eu mauris volutpat, rhoncus faucibus nisl placerat. Ut enim ex, mattis in mi at, laoreet feugiat ante. Vestibulum vitae sem vestibulum, ultricies nisi quis, venenatis orci. Etiam non nisi a velit scelerisque tempor quis a ex. Vivamus eleifend tellus in fermentum porttitor. Curabitur non efficitur nunc, eget pretium arcu. Curabitur consectetur orci eget urna dictum, id hendrerit ligula facilisis. Donec eget bibendum est, vitae ornare libero.
+            
+            Fusce vitae quam auctor, faucibus nulla in, vestibulum metus. Maecenas malesuada dapibus lorem eu tristique. Sed at tortor ut orci varius egestas in non risus. Suspendisse at dignissim felis. Nullam commodo fringilla sem. Phasellus at malesuada diam. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla ac pulvinar lorem. Proin molestie consectetur placerat. Sed sit amet est nulla. Morbi euismod rutrum elit nec aliquam. In eget mattis arcu, sit amet sodales nunc. Vestibulum at mauris mattis, dapibus nulla a, pretium elit.
+            
+            Praesent porttitor volutpat risus. Cras ac pharetra est. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean dictum odio id massa bibendum, quis tempor mi porta. Curabitur posuere erat purus, non sollicitudin eros vulputate a. Etiam consectetur rutrum lectus, eu fringilla arcu sodales vel. Suspendisse lorem velit, ullamcorper a semper sit amet, interdum eget magna. Aenean vestibulum odio eget enim imperdiet gravida. Mauris nisl tortor, fringilla a ullamcorper ut, sollicitudin quis nisi.</p>
+        <button type="button" id="Esconder">Haz clic aquí si no quieres ver todo ese textaco</button>
+        <button type="button" id="Revelar" style="display: none;">Clic si quieres volver a ver el textaco</button>
+        <br>
+        <br>
+            <form class="container-fluid text-center">
+            <label>
+                <input type="number" id="Numero1" required>
+            </label>
+            <label>+ 
+                <input type="number" id="Numero2" required>
+            </label>
+            <button type="button" id="Sumar">Calcular</button>
+        </form>
+
+        <div id="ContenedorResultado" style="display: none;">
+            El resultado de la suma es <p id="Resultado"></p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="container-fluid">
+        <p>A continuación, la calculadora de multiplicaciones:</p>
+
+        <form class="container-fluid text-center">
+            <label>
+                <input type="number" id="Numero3" required>
+            </label>
+            <label>*
+                <input type="number" id="Numero4" required>
+            </label>
+            <button type="button" id="Multiplicar">Calcular</button>
+        </form>
+
+        <div id="ContenedorResultado2" style="display: none;">
+            El resultado de la multiplicación es: <p id="Resultado2"></p>
+        </div>
+    </section>
+
+    <script src="/JS/funciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

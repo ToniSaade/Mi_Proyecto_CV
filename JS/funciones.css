@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+#header1{
+    color: darksalmon;
+    border: black solid 8px;
+    font-family: 'Mynerve', cursive;
+    background-color: aqua;
+    max-width: 100%;
+    min-width: auto;
+}
