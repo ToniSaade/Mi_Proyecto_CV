@@ -16,64 +16,131 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Proyecto Final/FavIcon.png">
 <body>
     
-    <header class="container-fluid text-center">
-        <h1 id="TítuloPágina">MI CURRICULUM VITAE</h1>
+    <!--Título, que incluye un botón opciones con los que intercalar idiomas y modo oscuro/modo claro-->
+
+    <header id="Header">
+        <h1 id="TítuloPágina" class="container text-center">Mi Curriculum Vitae 
+        <button type="button" id="Opciones"><img id="Options_Image" src="https://th.bing.com/th/id/OIP.DPn2P1oOSvJKQsZcJjgkjQHaHa?pid=ImgDet&rs=1" alt="Options button"></button><button type="button" id="Opciones2" style="display: none;"><img id="Options_Image" src="https://th.bing.com/th/id/OIP.DPn2P1oOSvJKQsZcJjgkjQHaHa?pid=ImgDet&rs=1" alt="Options button"></button></h1>
+            <div id="Menú_Desplegable" style="display: none;">
+                <button type="button" id="Modo_Oscuro" style="background-color: black; color: white;" class="container-fluid">Modo oscuro/Dark mode<img src="/Proyecto Final/Imagen3.png" class="Bandera" alt="Icono modo oscuro"> </button><button type="button" id="Modo_Claro" style="display: none; background-color: black; color: white;" class="container-fluid">Modo Claro/Light mode<img src="/Proyecto Final/Imagen4.png" class="Bandera" alt="Icono modo claro"></button> 
+                <button type="button" id="Cambiar_Inglés" style="background-color: black; color: white;" class="container-fluid">Cambiar a Inglés <img class="Bandera" src="/Proyecto Final/Imagen1.png" alt="Bandera EU"> </button><Button type="button" id="Cambiar_Español" style="display: none; background-color: black; color: white;" class="container-fluid">Change to Spanish<img src="/Proyecto Final/Imagen2.png" class="Bandera" alt="Bandera de ARG"></Button>
+            </div>
     </header>
 
     <br>
 
+    <!--Detalles de la persona-->
+
     <aside class="container-fluid Aside">    
         <div id="InformaciónPersonal">
-            <div id="DP">DETALLES PERSONALES 
-                <div class="Data_Requirement">Foto:
-                    <br>
-                    <img id="IMAGEN" class="container-fluid text-center" src="/1676941911166.jpg" alt="Foto de Perfil">
-                </div>
-                <div class="Data_Requirement">Nombre(s) y Apellido:
-                    <p class="Info">Wadih Antonio Saade</p>
-                </div>
-                <div class="Data_Requirement">Dirección:
-                    <p class="Info">Valwood Pkwy 8929 <br> Michigan, 63104</p>
-                </div>
-                <div class="Data_Requirement">Número de Teléfono:
-                    <p class="Info">3704035158</p>
-                </div>
-                <div class="Data_Requirement">Correo Electrónico:
-                    <p class="Info">tonisaade2013@gmail.com</p>
-                </div>
-                <div class="Data_Requirement">Fecha de Nacimiento (DD/MM/AA):
-                    <p class="Info">03/01/2004</p>
-                </div>
-                <div class="Data_Requirement">Lugar de Nacimiento:
-                    <p class="Info">Hospital "La madre y el Niño"</p>
-                </div>
-                <div class="Data_Requirement">Ciudad de Nacimiento:
-                    <p class="Info">Formosa</p>
-                </div>
-                <div class="Data_Requirement">Género:
-                    <p class="Info">Hombre</p>
-                </div>
-                <div class="Data_Requirement">Licencia de Conducir (A o B):
-                    <p class="Info">A</p>
-                </div>
-                <div class="Data_Requirement">Nacionalidad:
-                    <p class="Info">Argentino</p>
-                </div>
-                <div class="Data_Requirement">Estado Civil:
-                    <p class="Info">Soltero</p>
-                </div>
-                <div class="Data_Requirement">LinkedIn:
-                    <p class="Info">ToniSaade</p>
-                </div>
-            </div>   
+            <p id="DP" class="text-center">DETALLES PERSONALES</p>
+
+            <div class="Data_Requirement">Foto:
+                <br>
+                <img id="IMAGEN" class="container-fluid text-center" src="/1676941911166.jpg" alt="Foto de Perfil">
+            </div>
+
+    <!--Para poder añadir la opción de cambiar de idiomas, se añadió un texto oculto (inglés) el cual aparece cuando se presiona el botón "cambiar a inglés"-->
+
+            <div id="Campo0Es" class="Data_Requirement">Nombre(s) y Apellido:
+                <p  id="Campo1Es" class="Info">Wadih Antonio Saade</p> <!--Este texto desaparece cuando se interactúa con el botón antes mencionado, y vuelve a aparecer cuando presionamos "change to spanish" (Ocultando el texto en inglés)-->
+            </div>
+            <div id="Campo0En" class="Data_Requirement" style="display: none;">Name(s) and Surname:
+                <p  id="Campo1En" class="Info">Wadih Antonio Saade</p>
+            </div>
+
+            <div id="Campo2Es" class="Data_Requirement">Dirección:
+                <p id="Campo3Es" class="Info">Valwood Pkwy 8929 <br> Michigan, 63104</p>
+            </div>
+
+            <div id="Campo2En" class="Data_Requirement" style="display: none;">Direction:
+                <p id="Campo3En" class="Info">Valwood Pkwy 8929 <br> Michigan, 63104</p>
+            </div>
+
+            <div id="Campo4Es" class="Data_Requirement">Número de Teléfono:
+                <p id="Campo5Es" class="Info">3704035158</p>
+            </div>
+            <div id="Campo4En" class="Data_Requirement" style="display: none;">Phone Number:
+                <p id="Campo5En" class="Info">3704035158</p>
+            </div>
+
+            <div id="Campo6Es" class="Data_Requirement">Correo Electrónico:
+                <p id="Campo7Es" class="Info">tonisaade2013@gmail.com</p>
+            </div>
+            <div id="Campo6En" class="Data_Requirement" style="display: none;">E-Mail:
+                <p id="Campo7En" class="Info">tonisaade2013@gmail.com</p>
+            </div>
+
+            <div id="Campo8Es" class="Data_Requirement">Fecha de Nacimiento (DD/MM/AA):
+                <p id="Campo9Es" class="Info">03/01/2004</p>
+            </div>
+            <div id="Campo8En" class="Data_Requirement" style="display: none;">Date of Birth (MM/DD/AA):
+                <p id="Campo9En" class="Info">01/03/2004</p>
+            </div>
+
+            <div id="Campo10Es" class="Data_Requirement">Lugar de Nacimiento:
+                <p id="Campo11Es" class="Info">Hospital "La madre y el Niño"</p>
+            </div>
+            <div id="Campo10En" class="Data_Requirement" style="display: none;">Birth Place:
+                <p id="Campo11En" class="Info">"The Mother and the Children" Hospital</p>
+            </div>
+
+            <div id="Campo12Es" class="Data_Requirement">Ciudad de Nacimiento:
+                <p id="Campo13Es" class="Info">Formosa</p>
+            </div>
+            <div id="Campo12En" class="Data_Requirement" style="display: none;">City of Birth:
+                <p id="Campo13En" class="Info">Formosa</p>
+            </div>
+
+            <div id="Campo14Es" class="Data_Requirement">Género:
+                <p id="Campo15Es" class="Info">Hombre</p>
+            </div>
+            <div id="Campo14En" class="Data_Requirement" style="display: none;">Gender:
+                <p id="Campo15En" class="Info">Male</p>
+            </div>
+
+            <div id="Campo16Es" class="Data_Requirement">Licencia de Conducir (A o B):
+                <p id="Campo17Es" class="Info">A</p>
+            </div>
+            <div id="Campo16En" class="Data_Requirement" style="display: none;">Driving License (A or B):
+                <p id="Campo17En" class="Info">A</p>
+            </div>
+
+            <div id="Campo18Es" class="Data_Requirement">Nacionalidad:
+                <p id="Campo19Es" class="Info">Argentino</p>
+             </div>
+            <div id="Campo18En" class="Data_Requirement" style="display: none;">Nacionality:
+                <p id="Campo19En" class="Info">Argentine</p>
+            </div>
+
+            <div id="Campo20Es" class="Data_Requirement">Estado Civil:
+                <p id="Campo21Es" class="Info">Soltero</p>
+            </div>
+             <div id="Campo20En" class="Data_Requirement" style="display: none;">Matiral Status:
+                <p id="Campo21En" class="Info">Bachelor</p>
+            </div>
+
+            <div id="Campo22Es" class="Data_Requirement">Perfil de LinkedIn:
+                <p id="Campo23Es" class="Info">ToniSaade</p>
+            </div>
+                <div id="Campo22En" class="Data_Requirement" style="display: none;">LinkedIn Perfil:
+                <p id="Campo23En" class="Info">ToniSaade</p>
+            </div> 
         </div>
     </aside>
 
-    <section class="container-fluid Detalles">
+    <!--Detalles de experiencias laborales previas (texto sacado de Lorem Ipsum, puesto solo a modo de ejemplo)-->
+
+    <!--Al traducir al inglés/español, ocurre lo mismo que se mencionó anteriormente-->
+
+    <section class="Detalles">
+
         <div id="Acerca_De_Mi">
-            <p class="container-fluid text-center">-------------------- ACERCA DE MÍ --------------------</p>
+            <p id="Acerca" class="container-fluid text-center">ACERCA DE MÍ</p> 
+            <p id="Acerca_En" class="container-fluid text-center En_Container" style="display: none;">ABOUT ME</p>
             <p class="Information" id="Info1">Proin cursus turpis non velit maximus, vitae volutpat justo facilisis. Donec elementum felis quis lorem consectetur, sed rutrum mi hendrerit. Vivamus non eleifend lorem. Nullam faucibus, enim sit amet commodo pulvinar, odio odio tincidunt magna, faucibus rutrum sem ipsum a enim. Nulla ultrices volutpat ante, ultrices laoreet metus vehicula eu. Quisque faucibus tellus eu nulla condimentum, in accumsan orci placerat. Integer in mi et sapien viverra pharetra non non lectus. Integer varius feugiat elit, eu bibendum nibh tincidunt non. Ut eu magna eu dolor porta congue. Nullam leo turpis, condimentum non volutpat a, auctor quis erat. Etiam malesuada nunc ut est accumsan luctus.</p>
         </div>
 
@@ -81,35 +148,45 @@
         <button type="button" id="Botón_Mostrar1" style="display: none;">Mostrar esta Información</button>
     
         <div id="Exp_Lab">
-            <p class="container-fluid text-center">-------------------- DETALLES DE EXPERIENCIAS LABORALES PREVIAS --------------------</p>
+            <p id="Experiencia" class="container-fluid text-center">EXPERIENCIA LABORAL</p>
+            <p id="Experiencia_En" class="container-fluid text-center En_Container" style="display: none;">WORK EXPERIENCE</p>
             <p class="Information" id="Info2">Praesent lobortis ligula sed lorem convallis consectetur. Phasellus ultrices erat ut leo venenatis, eu efficitur ante efficitur. Mauris ultricies congue lectus, a rutrum dolor suscipit ac. Praesent tincidunt mauris ut blandit euismod. Suspendisse ut purus orci. Morbi a dignissim urna, in sodales turpis. Nulla facilisi. Vestibulum commodo vitae purus nec semper.</p>
         </div>
 
         <button type="button" id="Botón_Ocultar2">Ocultar esta Información</button>
         <button type="button" id="Botón_Mostrar2" style="display: none;">Mostrar esta Información</button>
 
-            <p class="container-fluid text-center">--------------------CURSOS DE CAPACITACIÓN REALIZADOS--------------------</p>
+        <div id="Cur_Rlz">
+            <p id="CursosRealizados" class="container-fluid text-center">CURSOS REALIZADOS</p>
+            <p id="CursosRealizados_En" class="container-fluid text-center En_Container" style="display: none;">COURSES DONE</p>
             <p class="Information" id="Info3">Vestibulum dictum diam eget faucibus viverra. Maecenas pretium turpis vitae augue laoreet, vitae rhoncus mi laoreet. Nunc id justo nulla. Sed pharetra quam metus, a dictum mauris facilisis eget. Sed euismod quis diam quis egestas. Curabitur tincidunt ex a ipsum dapibus laoreet. Duis sem ipsum, sagittis vestibulum scelerisque bibendum, efficitur id libero. Duis leo tellus, volutpat et porttitor imperdiet, dictum ut neque. Mauris interdum tincidunt diam, et aliquam urna maximus fringilla.</p>
-    
+        </div>
             <button type="button" id="Botón_Ocultar3">Ocultar esta Información</button>
             <button type="button" id="Botón_Mostrar3" style="display: none;">Mostrar esta Información</button>
     </section>
 
-    <aside class="container-fluid Aside2">
+    <!--Atributos de la persona (positivos)-->
+
+    <aside class="Aside2">
         <p id="Atributes" class="container-fluid text-center">ATRIBUTOS PERSONALES</p>
         <ul>
-            <li>Responsabilidad<button type="button" id="Botón_Mostrar4">Mostrar más</button><button type="button" id="Botón_Ocultar4" style="display: none;">Mostrar menos</button></li>
-            <p id="Res" style="display: none;">Destaca por el cumplimiento de las obligaciones o cuidado al hacer o decidir algo, y es consciente de que el claro conocimiento de que los resultados de cumplir o no las obligaciones, recaen sobre uno mismo</p>
+            <li id="L1">Realista</li>
+            <button type="button" id="Botón_Mostrar4">Mostrar más</button><button type="button" id="Botón_Ocultar4" style="display: none;">Mostrar menos</button>
+            <p id="Real" style="display: none;">Persona que es consciente de que las cosas son como son y de que los riesgos existen, lo cual le permite aprovechar los recursos disponibles a la vez que estar preparado para afrontar los riesgos que surjan.</p>
             
-            <li>Honestidad<button type="button" id="Botón_Mostrar4">Mostrar más</button><button type="button" id="Botón_Ocultar4" style="display: none;">Mostrar menos</button></li>
-           
-            <li>Optimismo<button type="button" id="Botón_Mostrar4">Mostrar más</button><button type="button" id="Botón_Ocultar4" style="display: none;">Mostrar menos</button></li>
+            <li id="L2">Honestidad</li>
+            <button type="button" id="Botón_Mostrar5">Mostrar más</button><button type="button" id="Botón_Ocultar5" style="display: none;">Mostrar menos</button>
+            <p id="Hon" style="display: none;">Persona que, cuando actúa, lo hace siempre apoyada en valores como la verdad y la justicia, y no antepone a estos sus propias necesidades o intereses. En este sentido, es una persona apegada a un código de conducta caracterizado por la rectitud, la probidad y la honradez.</p>
+
+            <li id="L3">Optimismo</li>
+            <button type="button" id="Botón_Mostrar6">Mostrar más</button><button type="button" id="Botón_Ocultar6" style="display: none;">Mostrar menos</button>
+            <p id="Op" style="display: none;">Persona confiada, esperanzada y positiva que siempre cree que todo puede funcionar en su vida, pase lo que pase. En otras palabras, incluso si puede pasar por situaciones de gran dificultad, puede creer que siempre habrá una solución para todo.</p>
             
-            <li>Capacidad de Análisis<button type="button" id="Botón_Mostrar4">Mostrar más</button><button type="button" id="Botón_Ocultar4" style="display: none;">Mostrar menos</button></li>
+            <li id="L4">Dedicación</li>
+            <button type="button" id="Botón_Mostrar7">Mostrar más</button><button type="button" id="Botón_Ocultar7" style="display: none;">Mostrar menos</button>
+            <p id="Ded" style="display: none;">Se destaca por estar comprometido con lo que se proponga las 24 hrs del día, y si ello implica que deje de hacer cualquier otra cosa si es que esa actividad se lo exige, lo hará con tal de cumplirla satisfactoriamente.</p>
         </ul>
     </aside>
-
-    <button type="button" id="boton">Cambiar a oscuro</button>
 
     <script src="/Proyecto Final/MiCurriculum.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
