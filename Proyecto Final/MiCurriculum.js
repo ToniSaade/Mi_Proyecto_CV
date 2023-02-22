@@ -1,3 +1,5 @@
+//Para ocultar y mostrar la información de la sección de experiencia laboral
+
 document.getElementById("Botón_Ocultar1").addEventListener("click", function(){
     document.getElementById("Info1").style.display = "none";
     document.getElementById("Botón_Ocultar1").style.display = "none";
@@ -36,6 +38,8 @@ document.getElementById("Botón_Ocultar3").addEventListener("click", function(){
         console.log("Se vuelve a mostrar el texto");
     }) 
 })
+
+//Para mostrar y ocultar información de la sección de atributos personales
 
 document.getElementById("Botón_Mostrar4").addEventListener("click", function(){
     document.getElementById("Real").style.display = "block";
@@ -89,6 +93,8 @@ document.getElementById("Botón_Mostrar7").addEventListener("click", function(){
     }) 
 })
 
+//Para mostrar y ocultar el menú desplegable de ajustes de la página
+
 document.getElementById("Opciones").addEventListener("click", function(){
     document.getElementById("Opciones2").style.display = "block";
     document.getElementById("Opciones").style.display = "none";
@@ -101,6 +107,8 @@ document.getElementById("Opciones").addEventListener("click", function(){
         console.log("Se oculta el menú");
     })
 })
+
+//Para cambiar el modo de visualización de la página (claro y oscuro)
 
 document.getElementById("Modo_Oscuro").addEventListener("click", function(){
     document.getElementById("Modo_Claro").style.display = "block";
@@ -132,6 +140,8 @@ document.getElementById("Modo_Oscuro").addEventListener("click", function(){
         console.log("Modo Claro activado");
     })
 })
+
+//Traducción entre inglés y español
 
 document.getElementById("Cambiar_Inglés").addEventListener("click", function(){
     document.getElementById("Cambiar_Español").style.display = "block";
